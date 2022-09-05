@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<addon scheme="3.0" edition_type="ROOT,ULT:VENDOR">
+    <id>docs</id>
+    <version>1.0</version>
+    <default_language>ru</default_language>
+    <priority>100</priority>
+    <status>active</status>
+    <supplier>Arina Krasnova</supplier>
+    <supplier_link>svetloriel@gmail.com</supplier_link>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="allow_save_documents_to_server">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+  
+    <queries>
+        <item>DROP TABLE IF EXISTS ?:documents;</item>
+        <item>DROP TABLE IF EXISTS ?:documents_attachments;</item>
+        <item for="install">
+       CREATE TABLE `?:documents` (
+            `docs_id`  mediumint(8) unsigned NOT NULL PRIMARY KEY AUTO_INCREMENT,
+            `name`  VARCHAR(50) NOT NULL default '',
+            `status`  VARCHAR(30) NOT NULL default '',
+            `type` VARCHAR(20) NOT NULL default '' ,
+            `timestamp` VARCHAR(30) NOT NULL default '' ,
+            `description` VARCHAR(250) NOT NULL default '',
+            `category` VARCHAR(30) NOT NULL default '',
+            `availability` VARCHAR(30) NOT NULL default ''
+        ) ENGINE=MyISAM DEFAULT CHARSET=UTF8
+        </item>
+        <item for="install">
+            CREATE TABLE `?:documents_attachments` (
+                `attachment_id` mediumint(8) unsigned NOT NULL auto_increment,
+                `lang_code` char(2) NOT NULL default '',
+                `description` varchar(255) NOT NULL default '',
+                `object_type` varchar(30) NOT NULL default '',
+                `object_id` mediumint(8) unsigned NOT NULL default '0',
+                `type` char(1) NOT NULL default '',
+                `position` int(11) NOT NULL default '0',
+                `filename` varchar(100) NOT NULL default '',
+                `filesize` int(11) unsigned NOT NULL default '0',
+                `usergroup_ids` varchar(255) NOT NULL default '0',
+                `status` char(1) NOT NULL default 'A',
+                `on_server` char(1) NOT NULL default 'Y',
+                `url` varchar(255) NOT NULL default '',
+                PRIMARY KEY  (`attachment_id`,`lang_code`),
+                KEY `object_type` (`object_type`,`object_id`),
+                KEY `type` (`type`)
+            ) ENGINE=MyISAM DEFAULT CHARSET UTF8;
+  </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:documents;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:documents_attachments;</item>
+    </queries>
+</addon>

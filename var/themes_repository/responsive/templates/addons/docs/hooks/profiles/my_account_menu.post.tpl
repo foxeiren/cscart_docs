@@ -1,0 +1,1 @@
+ <li class="ty-account-info__item ty-dropdown-box__item"><a class="ty-account-info__a underlined" href="{"docs.documents"|fn_url}" rel="nofollow" >{__("docs.docs")}</a></li>

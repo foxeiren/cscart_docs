@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: cs-cart-latest\n"
+"X-Crowdin-Project-ID: 50163\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /release-4.14.3/addons/docs.po\n"
+"X-Crowdin-File-ID: 6464\n"
+"PO-Revision-Date: 2022-04-13 14:59\n"
+
+msgctxt "Addons::name::docs"
+msgid "Documentations"
+msgstr "Документы"
+
+msgctxt "Addons::description::docs"
+msgid "Ability to add and download documents."
+msgstr "Работа с документами на сайте."
+
+msgctxt "Languages::docs.docs"
+msgid "Documents"
+msgstr "Документы"
+
+msgctxt "Languages::docs_menu_description"
+msgid "Ability to add and download documents."
+msgstr "Работа с документами на сайте."
+
+msgctxt "Languages::docs.docs_name"
+msgid "Documents name"
+msgstr "Название документа"
+
+msgctxt "Languages::docs.date_of_creation"
+msgid "Date of creation"
+msgstr "Дата создания"
+
+msgctxt "Languages::docs.document_description"
+msgid "Document Description"
+msgstr "Описание документа"
+
+msgctxt "Languages::docs.document_category"
+msgid "Document category"
+msgstr "Категория документа"
+
+msgctxt "Languages::docs.document_type"
+msgid "Document type"
+msgstr "Тип документа"
+
+msgctxt "Languages::docs.availability"
+msgid "Availability"
+msgstr "Доступность"
+
+msgctxt "Languages::docs.status"
+msgid "Status"
+msgstr "Статус"
+
+msgctxt "Languages::docs.add_document"
+msgid "Add document"
+msgstr "Добавить документ"
+
+msgctxt "Languages::docs.for_all"
+msgid "For all"
+msgstr "Для всех"
+
+msgctxt "Languages::docs.interior"
+msgid "Interior"
+msgstr "Внутренний"
+
+msgctxt "Languages::docs.accounts"
+msgid "Accounts"
+msgstr "Счета"
+
+msgctxt "Languages::docs.other"
+msgid "Other"
+msgstr "Прочее"
+
+msgctxt "Languages::docs.new_doc"
+msgid "New doc"
+msgstr "Новый документ"
+
+msgctxt "Languages::docs.details_notes"
+msgid "Details notes"
+msgstr "Введите данные для нового документа"
+
+msgctxt "Languages::docs.active"
+msgid "Active"
+msgstr "Активный"
+
+msgctxt "Languages::docs.disabled"
+msgid "Disabled"
+msgstr "Выключенный"
+
+msgctxt "Languages::docs.hidden"
+msgid "Hidden"
+msgstr "Скрытый"
+
+msgctxt "Languages::docs.administrators"
+msgid "Administrators"
+msgstr "Администраторы"
+
+msgctxt "Languages::docs.users"
+msgid "Users"
+msgstr "Пользователи"
+
+msgctxt "Languages::docs.no_files"
+msgid "No files"
+msgstr "Загруженных файлов пока нет ("
+
+msgctxt "Languages::docs.return_to_docs"
+msgid "<< Return to documents"
+msgstr "<< Вернуться к списку документов"
